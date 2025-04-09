@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kusinai01_app/screens/recipes_screen.dart';
+import 'package:kusinai01_app/screens/signin_screen.dart';
 
 void main() {
   runApp(KusinAIapp());
@@ -13,7 +14,7 @@ class KusinAIapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'KusinAI',
-      home: RecipeScreen(),
+      home: SignInPage(),
     );
   }
 }
