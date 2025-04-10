@@ -13,6 +13,16 @@ class SignInPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const Center(
+                child: Text(
+                  "KusinAI",
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              ),
               Container(
                 width: double.infinity,
                 height: 200,
@@ -23,16 +33,7 @@ class SignInPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 30),
-              const Text(
-                "KusinAI",
-                style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-                textAlign: TextAlign.left,
-              ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
               const Text("Hello,\nWelcome back!",
                   style: TextStyle(
                       fontSize: 24,
