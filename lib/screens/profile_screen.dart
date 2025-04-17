@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
+import 'package:kusinai01_app/screens/menu_screen.dart';
+
 class ProfileScreen extends StatefulWidget {
   @override
   _ProfileScreen createState() => _ProfileScreen();
@@ -93,7 +95,9 @@ class _ProfileScreen extends State<ProfileScreen> {
                 Align(
                   alignment: Alignment(-0.9, 0),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => MenuScreen()));
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
@@ -195,7 +199,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _buildRecipeCard('Lumpiang Shanghai', 'assets/lumpia.jpg'),
+                        _buildRecipeCard('Lumpiang Shanghai', 'assets/shanghai.jpg'),
                         SizedBox(width: 10),
                         _buildRecipeCard('Bicol Express', 'assets/bicol.jpg'),
                       ],
