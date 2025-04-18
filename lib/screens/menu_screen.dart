@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:kusinai01_app/screens/home_screen.dart';
 import 'package:kusinai01_app/screens/profile_screen.dart';
 import 'dart:io';
 
@@ -21,15 +21,18 @@ class _MenuScreen extends State<MenuScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Align(
-                alignment: Alignment(-.9, 0),
+                alignment: const Alignment(-.9, 0),
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()));
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         shadowColor: Colors.transparent,
                         elevation: 0,
-                        foregroundColor: Color(0xFFFBBC05)),
-                    child: Icon(
+                        foregroundColor: const Color(0xFFFBBC05)),
+                    child: const Icon(
                       Icons.arrow_back_ios,
                       size: 30,
                     )),

@@ -65,6 +65,12 @@ flutter:
     - assets/default_avatar.png
     - assets/shanghai.jpg
     - assets/bicol.jpg
+    - assets/adobo.jpeg
+    - assets/chopseuy.png
+    - assets/curry.jpg
+    - assets/pinakbet.png
+    - assets/sinigang.png
+    - assets/tinola.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
