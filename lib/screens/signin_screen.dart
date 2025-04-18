@@ -98,7 +98,7 @@ class SignInPage extends StatelessWidget {
                     iconSize: 35,
                     onPressed: () {},
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(height: 10),
                   IconButton(
                     icon: Image.asset('assets/facebook_icon.png'),
                     iconSize: 60,
