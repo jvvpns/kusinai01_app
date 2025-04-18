@@ -16,7 +16,7 @@ class KusinAIapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(scaffoldBackgroundColor: Color(0xFF101423),),
+      theme: ThemeData(scaffoldBackgroundColor: Color(0xFF0F1122),),
       title: 'KusinAI',
       home: SignUpPage(),
     );

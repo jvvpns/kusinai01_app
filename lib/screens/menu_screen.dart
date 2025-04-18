@@ -69,7 +69,7 @@ class _MenuScreen extends State<MenuScreen> {
                 ),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFFFBBC05),
-                    foregroundColor: Color(0xFF101423),
+                    foregroundColor: Color(0xFF0F1122),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                     minimumSize: Size(355, 55),
@@ -88,7 +88,7 @@ class _MenuScreen extends State<MenuScreen> {
                 ),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFFFBBC05),
-                    foregroundColor: Color(0xFF101423),
+                    foregroundColor: Color(0xFF0F1122),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                     minimumSize: Size(355, 55),
@@ -107,7 +107,7 @@ class _MenuScreen extends State<MenuScreen> {
                 ),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFFFBBC05),
-                    foregroundColor: Color(0xFF101423),
+                    foregroundColor: Color(0xFF0F1122),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                     minimumSize: Size(355, 55),
@@ -126,7 +126,7 @@ class _MenuScreen extends State<MenuScreen> {
                 ),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFFFBBC05),
-                    foregroundColor: Color(0xFF101423),
+                    foregroundColor: Color(0xFF0F1122),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                     minimumSize: Size(355, 55),
@@ -145,7 +145,7 @@ class _MenuScreen extends State<MenuScreen> {
                 ),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFFFBBC05),
-                    foregroundColor: Color(0xFF101423),
+                    foregroundColor: Color(0xFF0F1122),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                     minimumSize: Size(355, 55),

@@ -153,7 +153,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                       onPressed: () => setState(() => showRecipes = true),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: showRecipes ? Color(0xFFFBBC05) : Colors.transparent,
-                        foregroundColor: Color(0xFF101423),
+                        foregroundColor: Color(0xFF0F1122),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
                         elevation: showRecipes ? 2 : 0,
                         side: BorderSide(color: Color(0xFFFBBC05)),
@@ -164,7 +164,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: showRecipes ? Color(0xFF101423) : Color(0xFFFBBC05),
+                          color: showRecipes ? Color(0xFF0F1122) : Color(0xFFFBBC05),
                         ),
                       ),
                     ),
@@ -173,7 +173,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                       onPressed: () => setState(() => showRecipes = false),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: !showRecipes ? Color(0xFFFBBC05) : Colors.transparent,
-                        foregroundColor: Color(0xFF101423),
+                        foregroundColor: Color(0xFF0F1122),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
                         elevation: !showRecipes ? 2 : 0,
                         side: BorderSide(color: Color(0xFFFBBC05)),
@@ -184,7 +184,7 @@ class _ProfileScreen extends State<ProfileScreen> {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: !showRecipes ? Color(0xFF101423) : Color(0xFFFBBC05),
+                          color: !showRecipes ? Color(0xFF0F1122) : Color(0xFFFBBC05),
                         ),
                       ),
                     ),
