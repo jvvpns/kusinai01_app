@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:kusinai01_app/screens/home_screen.dart';
+import 'package:kusinai01_app/screens/signup_screen.dart';
 
 class SignInPage extends StatelessWidget {
-  const SignInPage({Key? key}) : super(key: key);
+  SignInPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class SignInPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Center(
+              Center(
                 child: Text(
                   "KusinAI",
                   style: TextStyle(
@@ -33,13 +35,13 @@ class SignInPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-              const Text("Hello,\nWelcome back!",
+              SizedBox(height: 20),
+              Text("Hello,\nWelcome back!",
                   style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
                       fontWeight: FontWeight.w500)),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               TextField(
                 decoration: InputDecoration(
                   hintText: 'Email',
@@ -51,7 +53,7 @@ class SignInPage extends StatelessWidget {
                 ),
                 style: const TextStyle(color: Colors.white),
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -68,22 +70,30 @@ class SignInPage extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   onPressed: () {},
-                  child: const Text("Forgot Password?",
+                  child: Text("Forgot Password?",
                       style: TextStyle(color: Colors.amberAccent)),
                 ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               ElevatedButton.icon(
-                onPressed: () {},
-                icon: const Icon(Icons.arrow_forward, size: 28),
-                label: const Text("Sign in",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
+                icon: Icon(Icons.arrow_forward, size: 28),
+                label: Text(
+                  "Sign in",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.amber,
                   foregroundColor: Colors.black,
                   minimumSize: const Size(double.infinity, 48),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               ),
               const SizedBox(height: 50),
@@ -127,7 +137,7 @@ class SignInPage extends StatelessWidget {
                     height: 60.0,
                     child: IconButton(
                       icon: Image.asset('assets/google_icon.png'),
-                      iconSize: 100,
+                      iconSize: 40,
                       onPressed: () {},
                     ),
                   ),
@@ -137,7 +147,7 @@ class SignInPage extends StatelessWidget {
                     height: 60.0,
                     child: IconButton(
                       icon: Image.asset('assets/facebook_icon.png'),
-                      iconSize: 100,
+                      iconSize: 40,
                       onPressed: () {},
                     ),
                   ),
@@ -146,7 +156,12 @@ class SignInPage extends StatelessWidget {
               const SizedBox(height: 20),
               Center(
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignUpPage()),
+                    );
+                  },
                   child: RichText(
                     text: const TextSpan(
                       children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kusinai01_app/screens/signin_screen.dart';
 import 'package:philippines_rpcmb/philippines_rpcmb.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -258,7 +259,12 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Center(
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignInPage()),
+                    );
+                  },
                   child: RichText(
                     text: const TextSpan(
                       children: [
