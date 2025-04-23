@@ -15,7 +15,7 @@ class KusinAIapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'KusinAI',
-      home: SignUpPage(),
+      home: SignInPage(),
     );
   }
 }

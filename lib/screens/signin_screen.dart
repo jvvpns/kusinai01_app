@@ -36,7 +36,7 @@ class SignInPage extends StatelessWidget {
               const SizedBox(height: 20),
               const Text("Hello,\nWelcome back!",
                   style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 30,
                       color: Colors.white,
                       fontWeight: FontWeight.w500)),
               const SizedBox(height: 20),
@@ -75,8 +75,9 @@ class SignInPage extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: const Icon(Icons.arrow_forward),
-                label: const Text("Sign in"),
+                icon: const Icon(Icons.arrow_forward, size: 28),
+                label: const Text("Sign in",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.amber,
                   foregroundColor: Colors.black,
@@ -85,24 +86,60 @@ class SignInPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10)),
                 ),
               ),
-              const SizedBox(height: 20),
-              const Center(
-                  child: Text("Or Sign in with:",
-                      style: TextStyle(color: Colors.white70))),
-              const SizedBox(height: 10),
+              const SizedBox(height: 50),
+              Row(
+                children: [
+                  // Left line
+                  Expanded(
+                    child: Divider(
+                      color: Colors.yellow,
+                      thickness: 1.5,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+
+                  // Center text
+                  const Text(
+                    "Or Sign up with",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+
+                  // Right line
+                  Expanded(
+                    child: Divider(
+                      color: Colors.yellow,
+                      thickness: 1.5,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(
-                    icon: Image.asset('assets/google_icon.png'),
-                    iconSize: 35,
-                    onPressed: () {},
+                  Container(
+                    margin: EdgeInsets.all(10.0),
+                    width: 60.0,
+                    height: 60.0,
+                    child: IconButton(
+                      icon: Image.asset('assets/google_icon.png'),
+                      iconSize: 100,
+                      onPressed: () {},
+                    ),
                   ),
-                  const SizedBox(height: 10),
-                  IconButton(
-                    icon: Image.asset('assets/facebook_icon.png'),
-                    iconSize: 60,
-                    onPressed: () {},
+                  Container(
+                    margin: EdgeInsets.all(10.0),
+                    width: 60.0,
+                    height: 60.0,
+                    child: IconButton(
+                      icon: Image.asset('assets/facebook_icon.png'),
+                      iconSize: 100,
+                      onPressed: () {},
+                    ),
                   ),
                 ],
               ),
