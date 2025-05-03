@@ -3,7 +3,7 @@ import 'package:kusinai01_app/screens/home_screen.dart';
 import 'package:kusinai01_app/screens/signup_screen.dart';
 
 class SignInPage extends StatelessWidget {
-  SignInPage({super.key});
+  const SignInPage({super.key});
 
   @override
   Widget build(BuildContext context) {

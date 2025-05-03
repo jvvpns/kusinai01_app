@@ -241,17 +241,17 @@ class _SignUpPageState extends State<SignUpPage> {
                     height: 60.0,
                     child: IconButton(
                       icon: Image.asset('assets/google_icon.png'),
-                      iconSize: 100,
+                      iconSize: 40,
                       onPressed: () {},
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.all(10.0),
-                    width: 70.0,
-                    height: 70.0,
+                    width: 60.0,
+                    height: 60.0,
                     child: IconButton(
                       icon: Image.asset('assets/facebook_icon.png'),
-                      iconSize: 100,
+                      iconSize: 40,
                       onPressed: () {},
                     ),
                   ),
