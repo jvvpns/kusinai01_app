@@ -4,7 +4,6 @@ import 'package:kusinai01_app/screens/profile_screen.dart';
 import 'package:kusinai01_app/screens/recipes_screen.dart';
 import 'package:kusinai01_app/screens/signin_screen.dart';
 import 'package:kusinai01_app/screens/signup_screen.dart';
-import 'package:kusinai01_app/screens/survey_screen/survey_page1.dart';
 
 void main() {
   runApp(KusinAIapp());
@@ -21,7 +20,7 @@ class KusinAIapp extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xFF0F1122),
       ),
       title: 'KusinAI',
-      home: SurveyScreen1(),
+      home: SignInPage(),
     );
   }
 }

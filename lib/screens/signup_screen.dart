@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kusinai01_app/screens/signin_screen.dart';
 import 'package:philippines_rpcmb/philippines_rpcmb.dart';
+import 'package:kusinai01_app/screens/survey_screen/survey_page1.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -184,7 +185,8 @@ class _SignUpPageState extends State<SignUpPage> {
               ElevatedButton(
                 onPressed: acceptedTerms
                     ? () {
-
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SurveyScreen1(),));
                 }
                     : null,
                 style: ElevatedButton.styleFrom(
